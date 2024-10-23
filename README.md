@@ -1,4 +1,4 @@
-# HealthSync
+ok# HealthSync
 
 HealthSync is a comprehensive health management system designed to streamline hospital operations and track fitness progress. It offers an integrated platform for managing patient data, appointments, medical records, and fitness routines, providing a holistic view of personal and medical health.
 
@@ -86,7 +86,5 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## Contact
 For any inquiries or support, please reach out to the project owner at:
-- **Email**: your.email@example.com
+- **Email**: olorunfemidaniel53@gmail.com
 ```
-
-Replace `YourUsername` with your actual GitHub username and update the contact info accordingly. You can also add a section on **Future Enhancements** or **Known Issues** if needed.
