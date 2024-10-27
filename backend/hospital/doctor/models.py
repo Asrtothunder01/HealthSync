@@ -21,6 +21,8 @@ class Doctor(BaseModel):
     
     specialization = models.CharField(max_length = 50)
     
+    contact = models.CharField(max_length = 50)
+    
     address = models.CharField()
     
     def __str__(self):
