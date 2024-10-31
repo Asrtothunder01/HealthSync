@@ -1,4 +1,4 @@
-ok# HealthSync
+# HealthSync
 
 HealthSync is a comprehensive health management system designed to streamline hospital operations and track fitness progress. It offers an integrated platform for managing patient data, appointments, medical records, and fitness routines, providing a holistic view of personal and medical health.
 
