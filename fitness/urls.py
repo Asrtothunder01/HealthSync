@@ -16,8 +16,38 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path,include
+from drf_spectacular.views import SpectacularAPIView, SpectacularSwaggerView, SpectacularRedocView
 
 urlpatterns = [
+
     path('admin/', admin.site.urls),
+
     path('api/',include('workout.urls')),
+
+    path('api/schema/', SpectacularAPIView.as_view(), name='schema'),
+    
+    path('api/swagger/', SpectacularSwaggerView.as_view(url_name='schema'), name='swagger-ui'),
+
+    path('api/auth/',include('dj_rest_auth.urls')),
+
+    path('api/register/',include('rest_framework.urls')),
+
+    path('api/auth/register/',include('dj_rest_auth.registration.urls')),
+
+    path('api/redoc/', SpectacularRedocView.as_view(url_name = 'schema'),name = 'redoc'),
+
+    path('account/',include('allauth.urls')),
+
+
+    
+    path('fitness/',include('user.urls')),
+
+    path('diet/',include('diet.urls')),
+
+    path('meal/',include('meal.urls')),
+
+    path('workout/',include('workout.urls')),
+
+    path('exercise/',include('exercise.urls')),
+
 ]

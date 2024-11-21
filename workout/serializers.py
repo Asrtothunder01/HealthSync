@@ -11,7 +11,7 @@ class RoutineSerializer(serializers.ModelSerializer):
         fields = ['id','name','description','created_by']
 
 
-class ExerciseSerializer(serializers.ModelSerializer):
+class WorkoutSerializer(serializers.ModelSerializer):
 
     workout_routine = RoutineSerializer(read_only = True)
     
