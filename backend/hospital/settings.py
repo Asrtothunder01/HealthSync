@@ -161,13 +161,24 @@ SPECTACULAR_SETTINGS = {
 
     'VERSION':'9.9.0',
 
-    'LOGIN_URL':'login',
+    'LOGIN_URL':'api/auth/login/',
 
-    'LOGOUT_URL':'logout',
+    'LOGOUT_URL':'api/auth/logout/',
 
     'SCHEMA_PATH_PREFIX': '/api/v1',
 
-    'SERVE_INCLUDE_SCHEMA': False
+    'SERVE_INCLUDE_SCHEMA': False,
+
+    'SECURITY': [
+        {
+            'apiKeyAuth': []  # Token Authentication
+        },
+        {
+            'cookieAuth': []  # Session Authentication
+        },
+    ],
+    'SERVE_PERMISSIONS': ['rest_framework.permissions.IsAuthenticated'],
+
 }
 
 
