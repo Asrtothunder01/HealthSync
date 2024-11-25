@@ -1,3 +1,5 @@
+from django.shortcuts import render
+
 from rest_framework.generics import ListAPIView,CreateAPIView
 
 from .serializers import MealSerializer
@@ -5,6 +7,9 @@ from .serializers import MealSerializer
 from .models import Meal
 
 from drf_spectacular.utils import extend_schema
+
+def design(request):
+    return render(request,'meal/base.html',{'title':"Our Food"})
 
 extend_schema(
     tags = ['Meal'],

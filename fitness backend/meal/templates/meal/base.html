@@ -1,0 +1,28 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        {% block title %}Default Title{% endblock %}
+    </title>
+    <!-- Include your CSS file -->
+    <link href="{% static 'css/blog.css' %}" rel="stylesheet">
+</head>
+<body>
+    <div id="content">
+        <!-- Main content block -->
+        {% block content %}
+        <p>Welcome to My Meal Website!</p>
+        {% endblock %}
+
+        <!-- Sidebar content -->
+        <div id="sidebar">
+            <h2>My Meal</h2>
+            <p>Healthy Meal</p>
+        </div>
+    </div>
+</body>
+</html>
